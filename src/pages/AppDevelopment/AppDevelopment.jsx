@@ -64,7 +64,7 @@ export const AppDevelopment = () => {
       <Banner />
       <section className="sm:min-h-screen text-white pt-[7rem]">
         <div data-aos="fade-left" className="wrapper">
-          <div className="grid sm:grid-cols-[60%_40%] gap-5">
+          <div className="grid sm:grid-cols-[60%_40%] items-center gap-5">
             <div className="w-full">
               <div className="flex flex-col gap-5 max-w-[30rem]">
                 <h2 className="text-4xl">

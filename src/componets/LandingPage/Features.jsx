@@ -122,7 +122,7 @@ const Features = () => {
           </div>
           <div
             data-aos="fade-up"
-            className="flex flex-col md:flex-row sm:justify-between bg-gradient-to-bl from-[#bea1a7] to-[#95b6cc] mt-8 md:mt-16 md:h-[60vh]"
+            className="flex flex-col md:flex-row sm:justify-between items-center bg-gradient-to-bl from-[#bea1a7] to-[#95b6cc] mt-8 md:mt-16 md:h-[60vh]"
           >
             <div className="flex flex-col gap-2 p-5 lg:p-10 text-black">
               <p className="text-lg font-medium">Drag-n-drop Agenda Builder</p>
