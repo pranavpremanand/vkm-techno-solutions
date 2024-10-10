@@ -22,16 +22,16 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="sm:h-screen">
+    <div id='banner' className="sm:h-screen">
       <div className="wrapper flex flex-col items-center gap-5 pt-14 text-center">
-        <h1 className="py-4 bg-gradient-to-r from-[#7186FF] to-[#FE7587] bg-clip-text text-transparent text-5xl md:text-7xl font-bold">
+        <h1 data-aos="fade-left" className="py-4 bg-gradient-to-r from-[#7186FF] to-[#FE7587] bg-clip-text text-transparent text-5xl md:text-7xl font-bold">
           Design & Revolution
         </h1>
-        <p className="text-white/70 max-w-[40rem]">
+        <p data-aos="fade-up" className="text-white/70 max-w-[40rem]">
           We build world-class solutions to help your business evolve and reach
           the top.
         </p>
-        <div className="flex items-center gap-2">
+        <div data-aos="fade-up" className="flex items-center gap-2">
           <Link to="/webdevelopment" className="primary-btn">
             Demo
           </Link>
@@ -50,7 +50,7 @@ const Banner = () => {
           className="object-contain w-3/4 mx-auto h-full absolute inset-0 -z-10"
           alt=""
         />
-        <img src={laptop} className="object-contain h-5/6 sm:h-4/6 z-10" alt="" />
+        <img data-aos="flip-left" src={laptop} className="object-contain h-5/6 sm:h-4/6 z-10" alt="" />
       </div>
     </div>
   );

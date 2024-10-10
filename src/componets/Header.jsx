@@ -10,20 +10,20 @@ const options = [
     path: "features",
   },
   {
-    name: "Pricing",
-    path: "pricing",
+    name: "Services",
+    path: "services",
   },
   {
     name: "Events",
     path: "events",
   },
   {
-    name: "About",
-    path: "about",
+    name: "Blogs",
+    path: "blogs",
   },
   {
-    name: "Blog",
-    path: "blog",
+    name: "Contact Us",
+    path: "contact",
   },
 ];
 
@@ -38,12 +38,12 @@ const Header = () => {
     <div className="py-5 sticky top-0 w-full bg-black z-50 text-white">
       <div className="wrapper flex justify-between items-center gap-4">
         <div className="flex items-center gap-20 w-full">
-          <h2 className="text-xl sm:text-2xl">VKM Techno Solutions</h2>
-          <div className="lg:flex items-center gap-4 hidden">
+          <Link smooth={true} to='banner' className="text-xl cursor-pointer sm:text-2xl">VKM Techno Solutions</Link>
+          <div className="lg:flex items-center gap-6 hidden">
             {options.map((option) => (
               <Link
-                href={`${option.path}`}
-                className=""
+                to={`${option.path}`}
+                className="link"
                 key={option.path}
                 spy={true}
                 smooth={true}
@@ -56,8 +56,8 @@ const Header = () => {
           </div>
         </div>
         <div className="lg:flex items-center gap-4 hidden">
-          <Link to="/">Support</Link>
-          <Link to="/">Login</Link>
+          <Link className='link' to="/">Support</Link>
+          <Link className='link' to="/">Login</Link>
           <Link className="primary-btn">Demo</Link>
         </div>
         <Drawer
@@ -79,7 +79,7 @@ const Header = () => {
               <Link
                 onClick={() => setIsOpen(false)}
                 key={id}
-                className="text-3xl text-white font-medium transition-colors duration-300"
+                className="text-3xl text-white font-medium transition-colors duration-300 link"
                 to={path}
                 spy={true}
                 smooth={true}
@@ -89,10 +89,10 @@ const Header = () => {
                 {name}
               </Link>
             ))}
-            <Link onClick={() => setIsOpen(false)} className="text-3xl text-white font-medium transition-colors duration-300" to="/">
+            <Link onClick={() => setIsOpen(false)} className="link text-3xl text-white font-medium transition-colors duration-300" to="/">
               Support
             </Link>
-            <Link onClick={() => setIsOpen(false)} className="text-3xl text-white font-medium transition-colors duration-300" to="/">Login</Link>
+            <Link onClick={() => setIsOpen(false)} className="link text-3xl text-white font-medium transition-colors duration-300" to="/">Login</Link>
           </div>
         </Drawer>
         <div

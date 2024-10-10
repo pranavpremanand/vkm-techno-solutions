@@ -51,6 +51,9 @@ html{
   .btn-styles{
     @apply hover:shadow-white hover:-translate-y-1 shadow-2xl shadow-transparent rounded-full px-4 py-2 transition-all duration-300 font-light text-sm;
   }
+  .link{
+    @apply cursor-pointer hover:text-primary transition-colors duration-200;
+  }
 }
 
 

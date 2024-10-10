@@ -11,23 +11,23 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <h5 className="text-white/70">Product</h5>
               <ul className="flex flex-col gap-2 text-sm">
-                <Link>Features</Link>
-                <Link>Pricing</Link>
-                <Link>Book a demo</Link>
+                <Link className="link">Features</Link>
+                <Link className="link">Pricing</Link>
+                <Link className="link">Book a demo</Link>
               </ul>
             </div>
             <div className="flex flex-col gap-3">
               <h5 className="text-white/70">Explore</h5>
               <ul className="flex flex-col gap-2 text-sm">
-                <Link>Events</Link>
-                <Link>Blog</Link>
+                <Link className="link">Events</Link>
+                <Link className="link">Blogs</Link>
               </ul>
             </div>
             <div className="flex flex-col gap-3">
               <h5 className="text-white/70">Company</h5>
               <ul className="flex flex-col gap-2 text-sm">
-                <Link>About Us</Link>
-                <Link>Contact Us</Link>
+                <Link className="link">About Us</Link>
+                <Link className="link">Contact Us</Link>
               </ul>
             </div>
           </div>
