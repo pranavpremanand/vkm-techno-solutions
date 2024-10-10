@@ -1,11 +1,11 @@
 import React from "react";
 import { useKeenSlider } from "keen-slider/react";
-import profileImg1 from "../../../assets/images/profileimg-1.png";
-import profileImg2 from "../../../assets/images/profileimg-2.png";
-import profileImg3 from "../../../assets/images/profileimg-3.png";
-import brand1 from "../../../assets/images/bitwise.png";
-import brand2 from "../../../assets/images/dribble.png";
-import brand3 from "../../../assets/images/salesforce.png";
+import profileImg1 from "../assets/images/profileimg-1.png";
+import profileImg2 from "../assets/images/profileimg-2.png";
+import profileImg3 from "../assets/images/profileimg-3.png";
+import brand1 from "../assets/images/bitwise.png";
+import brand2 from "../assets/images/dribble.png";
+import brand3 from "../assets/images/salesforce.png";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const reviews = [

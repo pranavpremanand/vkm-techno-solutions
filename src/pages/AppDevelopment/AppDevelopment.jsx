@@ -20,7 +20,7 @@ import Services from "../../componets/LandingPage/Services";
 import Blogs from "../../componets/LandingPage/Blogs";
 import Contact from "../../componets/LandingPage/Contact";
 
-export const WebDevelopment = () => {
+export const AppDevelopment = () => {
   useEffect(() => {
     const tl = gsap.timeline();
     tl.to("#to-bottom", {
@@ -337,3 +337,5 @@ export const WebDevelopment = () => {
     </div>
   );
 };
+
+export default AppDevelopment;
