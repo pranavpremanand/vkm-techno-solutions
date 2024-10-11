@@ -10,10 +10,9 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #5B6CFF;
+  background-color: #5b6cff;
   border-radius: 8px;
 }
-
 
 h1 {
   font-family: "Raleway", sans-serif;
@@ -36,26 +35,32 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-html{
+html {
   background-color: #000000;
-  overflow-x: hidden
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @layer utilities {
   .wrapper {
     @apply max-w-7xl mx-auto px-4;
   }
-  .primary-btn{
+  .primary-btn {
     @apply text-white font-light bg-primary hover:bg-primary/80 text-sm hover:shadow-white hover:-translate-y-1 shadow-2xl shadow-transparent rounded-full px-4 py-2 transition-all duration-300;
   }
-  .btn-styles{
+  .btn-styles {
     @apply hover:shadow-white hover:-translate-y-1 shadow-2xl shadow-transparent rounded-full px-4 py-2 transition-all duration-300 font-light text-sm;
   }
-  .link{
+  .link {
     @apply cursor-pointer hover:text-primary transition-colors duration-200;
   }
 }
-
 
 .EZDrawer .EZDrawer__container {
   background: #000000 !important;
