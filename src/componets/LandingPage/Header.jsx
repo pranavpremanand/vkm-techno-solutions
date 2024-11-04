@@ -50,8 +50,9 @@ const Header = () => {
                 key={option.path}
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-60}
                 duration={1000}
+                activeClass="active-link"
               >
                 {option.name}
               </Link>

@@ -43,6 +43,9 @@ body {
   .desc{
     @apply font-inter font-light;
   }
+  .active-link{
+    @apply text-primary;
+  }
   .primary-btn {
     @apply text-white cursor-pointer font-light tracking-wide bg-tertiary hover:bg-tertiary/80 text-sm hover:shadow-secondary hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300;
   }
