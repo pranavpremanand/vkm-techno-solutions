@@ -81,16 +81,18 @@ export const LandingPage = ({ page }) => {
           className="w-full h-full object-cover object-right absolute"
           alt=""
         />
-        <div className="bg-gradient-to-r from-white/50 to-primary/20 absolute w-full h-full"></div>
+        <div className="bg-gradient-to-r from-primary/30 to-secondary/80 absolute w-full h-full"></div>
         <div className="pt-[3rem] wrapper flex items-center h-full">
-          <div className="relative z-10 px-6 justify-center h-full flex flex-col items-center gap-5 text-center md:max-w-[40rem]">
+          <div className="relative z-10 px-6 justify-center h-full flex flex-col items-center gap-5 text-center md:max-w-[60rem] mx-auto">
             <div className="rounded-text-box border-black font-medium text-white">
               {isWebDevelopment ? "Web Development" : "App Development"}
             </div>
-            <h1 className="heading-1">
-              Welcome to <br /> VKM Techno Solutions
+            <h1 className="heading-1 text-white">
+              {isWebDevelopment
+                ? "Creating Websites that Grow with Your Business"
+                : "Your Ideas, Perfectly Engineered into Apps"}
             </h1>
-            <p className="text-black/90 desc">
+            <p className="text-white/90 desc">
               We specialize in delivering cutting-edge IT solutions tailored to
               meet the unique needs of modern businesses.
             </p>
