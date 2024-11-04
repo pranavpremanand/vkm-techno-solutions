@@ -97,7 +97,7 @@ export const LandingPage = ({ page }) => {
               We specialize in delivering cutting-edge IT solutions tailored to
               meet the unique needs of modern businesses.
             </p>
-            <ScrollLink to="contact" smooth className="primary-btn mt-2">
+            <ScrollLink to="contact" smooth offset={-90} className="primary-btn mt-2">
               Get Started
             </ScrollLink>
           </div>
