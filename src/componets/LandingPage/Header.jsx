@@ -3,24 +3,25 @@ import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { logoImg } from "../../constant";
 
 const options = [
   {
-    name: "Features",
-    path: "features",
+    name: "Home",
+    path: "banner",
+  },
+  {
+    name: "About Us",
+    path: "about",
   },
   {
     name: "Services",
     path: "services",
   },
-  {
-    name: "Events",
-    path: "events",
-  },
-  {
-    name: "Blogs",
-    path: "blogs",
-  },
+  // {
+  //   name: "FAQs",
+  //   path: "faqs",
+  // },
   {
     name: "Contact Us",
     path: "contact",
@@ -35,15 +36,17 @@ const Header = () => {
   };
 
   return (
-    <div className="py-5 sticky top-0 w-full bg-black z-50 text-white">
-      <div className="wrapper flex justify-between items-center gap-4">
-        <div className="flex items-center gap-20 w-full">
-          <Link smooth={true} to='banner' className="text-xl cursor-pointer sm:text-2xl">VKM Techno Solutions</Link>
-          <div className="lg:flex items-center gap-6 hidden">
+    <div className="py-4 fixed top-0 w-full bg-black/60 backdrop-blur-md z-50 text-white">
+      <div className="wrapper flex justify-between items-center gap-10">
+        <div className="flex justify-between items-center gap-20 w-full">
+          <Link smooth={true} to="banner" className="cursor-pointer">
+            <img src={logoImg} className="w-[5rem] md:w-[6rem] scale-125" alt="logo" />
+          </Link>
+          <div className="lg:flex items-center gap-10 hidden">
             {options.map((option) => (
               <Link
                 to={`${option.path}`}
-                className="link"
+                className="link text-sm"
                 key={option.path}
                 spy={true}
                 smooth={true}
@@ -54,11 +57,6 @@ const Header = () => {
               </Link>
             ))}
           </div>
-        </div>
-        <div className="lg:flex items-center gap-4 hidden">
-          <Link className='link' to="/">Support</Link>
-          <Link className='link' to="/">Login</Link>
-          <Link className="primary-btn">Demo</Link>
         </div>
         <Drawer
           open={isOpen}
@@ -89,10 +87,20 @@ const Header = () => {
                 {name}
               </Link>
             ))}
-            <Link onClick={() => setIsOpen(false)} className="link text-3xl text-white font-medium transition-colors duration-300" to="/">
+            <Link
+              onClick={() => setIsOpen(false)}
+              className="link text-3xl text-white font-medium transition-colors duration-300"
+              to="/"
+            >
               Support
             </Link>
-            <Link onClick={() => setIsOpen(false)} className="link text-3xl text-white font-medium transition-colors duration-300" to="/">Login</Link>
+            <Link
+              onClick={() => setIsOpen(false)}
+              className="link text-3xl text-white font-medium transition-colors duration-300"
+              to="/"
+            >
+              Login
+            </Link>
           </div>
         </Drawer>
         <div

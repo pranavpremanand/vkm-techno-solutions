@@ -1,24 +1,36 @@
 import { Route, Routes } from "react-router-dom";
-import Header from "./componets/LandingPage/Header";
-import { WebDevelopment } from "./pages/WebDevelopment/WebDevelopment";
-import Footer from "./componets/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import AppDevelopment from "./pages/AppDevelopment/AppDevelopment";
+import { LandingPage } from "./pages/LandingPage/LandingPage";
+import Header from "./componets/LandingPage/Header";
+import Footer from "./componets/Footer";
+import { Home } from "./pages/website/Home";
 
 AOS.init({
   once: true,
-  duration:500,
+  duration: 500,
 });
 export default function App() {
   return (
     <Routes>
+      {/* <Route
+        path="/"
+        element={
+          <>
+            <Header />
+            <Home />
+            <Footer />
+          </>
+        }
+      /> */}
+
+      {/* Landing Pages */}
       <Route
         path="/web-development"
         element={
           <>
             <Header />
-            <WebDevelopment />
+            <LandingPage page={"web-development"} />
             <Footer />
           </>
         }
@@ -28,7 +40,7 @@ export default function App() {
         element={
           <>
             <Header />
-            <AppDevelopment />
+            <LandingPage page={"app-development"} />
             <Footer />
           </>
         }

@@ -1,62 +1,54 @@
 import React from "react";
-import section4Img1 from "../../assets/images/section-4-img-1.png";
-import section4Img2 from "../../assets/images/section-4-img-2.png";
-import section4Img3 from "../../assets/images/section-4-img-3.png";
-import section4Img4 from "../../assets/images/section-4-img-4.png";
-import section4Img5 from "../../assets/images/section-4-img-5.png";
+import { appDevelopmentServices, webDevelopmentServices } from "../../constant";
 
-const services = [
-  {
-    id: 1,
-    img: section4Img1,
-    title: "Web Development",
-    desc: "Welcome Studio gives you all the tools you need to create and host virtual experiences that look awesome and put your brand centerstage.",
-  },
-  {
-    id: 2,
-    img: section4Img2,
-    title: "App Development",
-    desc: "Cut through the yawns, grab your audience’s attention, and turn passive attendees into active participants.",
-  },
-  {
-    id: 3,
-    img: section4Img3,
-    title: "UI/UX",
-    desc: "Track the success of your events with deep insights and analytics measured across the entire attendee experience.",
-  },
-  {
-    id: 4,
-    img: section4Img4,
-    title: "Chat Bots",
-    desc: "Track the success of your events with deep insights and analytics measured across the entire attendee experience.",
-  },
-  {
-    id: 5,
-    img: section4Img5,
-    title: "Machine Learning Solutions",
-    desc: "Track the success of your events with deep insights and analytics measured across the entire attendee experience.",
-  },
-];
-const Services = () => {
+const Services = ({ page }) => {
+  const services =
+    page === "web-development"
+      ? webDevelopmentServices
+      : appDevelopmentServices;
   return (
-    <div className="grid grid-cols-1">
-      {services.map((item) => (
-        <div
-          className="text-white sm:text-black py-10 border-t border-black/30 flex gap-8 flex-col-reverse sm:grid items-center grid-cols-[40%_55%] sm:gap-5"
-          key={item.id}
-        >
-          <div data-aos="fade-right" className="flex flex-col gap-3">
-            <h2 className="font-medium text-2xl sm:text-3xl">{item.title}</h2>
-            <p>{item.desc}</p>
-          </div>
-          <img
-            data-aos="fade-left"
-            src={item.img}
-            className="w-full h-[30vh] sm:h-full object-cover rounded-md sm:rounded-full"
-            alt={item.title}
-          />
+    <div id="services" className="flex justify-center relative">
+      <div className="wrapper py-10 flex flex-col items-center gap-5 z-10 text-white">
+        <div className="gradient-rounded-text-box mx-auto">
+          Our {page === "web-development" ? "Web" : "App"} Development Services
         </div>
-      ))}
+        <h1 data-aos="fade-up" className="heading-2 text-center max-w-2xl">
+          {/* We provide the Best IT solution services */}
+          {page === "web-development" &&
+            "High-Quality Web Development to Transform Your Online Identity"}
+          {page === "app-development" &&
+            "Cutting-Edge App Development Services for Powerful Mobile Solutions"}
+        </h1>
+        <p data-aos="fade-up" className="text-center max-w-2xl desc">
+          {page === "web-development" &&
+            "High-performance web development services designed to create secure, scalable, and user-friendly websites that enhance your business's digital presence."}
+          {page === "app-development" &&
+            "High-performance app development services designed to deliver secure, scalable, and user-friendly applications that elevate your business's digital reach and engage your audience."}
+        </p>
+        <div
+          data-aos="fade-up"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-10 py-[2rem] mx-auto max-w-6xl"
+        >
+          {services.map((item) => (
+            <div
+              key={item.id}
+              className="shadow-2xl transition-all border-2 border-primary bg-primary/15 duration-300 rounded-lg"
+            >
+              <div className="flex h-full flex-col gap-2 items-center text-center text-white p-5 rounded-lg">
+                <img
+                  src={item.icon}
+                  alt="icon"
+                  className="w-[6rem] grayscale-[65%]"
+                />
+                <h6 className="font-semibold text-2xl font-raleway">
+                  {item.title}
+                </h6>
+                <p className="text-md text-white/70 desc">{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
