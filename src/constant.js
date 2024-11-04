@@ -7,7 +7,7 @@ import whyChooseUsPng from "./assets/images/whychooseus-png.png";
 import faqPng from "./assets/images/faq-character.png";
 import appDevBanner from "./assets/images/app-dev-banner.jpg";
 import webDevBanner from "./assets/images/web-landing-banner.jpg";
-import webLandingAbout from './assets/images/web-landing-about.png'
+import webLandingAbout from './assets/images/web-landing-about1.png'
 import appLandingAbout from './assets/images/app-landing-about.png'
 
 export {
