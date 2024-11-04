@@ -31,6 +31,7 @@ import {
 } from "../../constant";
 import TrustWorthyBox from "../../componets/TrustWorthyBox";
 import Faqs from "../../componets/Faqs";
+import { Link as ScrollLink } from "react-scroll";
 
 export const LandingPage = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");
@@ -81,7 +82,7 @@ export const LandingPage = ({ page }) => {
           className="w-full h-full object-cover object-right absolute"
           alt=""
         />
-        <div className="bg-gradient-to-r from-primary/30 to-secondary/80 absolute w-full h-full"></div>
+        <div className="bg-gradient-to-r from-white/20 to-secondary/80 absolute w-full h-full"></div>
         <div className="pt-[3rem] wrapper flex items-center h-full">
           <div className="relative z-10 px-6 justify-center h-full flex flex-col items-center gap-5 text-center md:max-w-[60rem] mx-auto">
             <div className="rounded-text-box border-black font-medium text-white">
@@ -96,9 +97,9 @@ export const LandingPage = ({ page }) => {
               We specialize in delivering cutting-edge IT solutions tailored to
               meet the unique needs of modern businesses.
             </p>
-            <Link to="/webdevelopment" className="primary-btn mt-2">
+            <ScrollLink to="contact" smooth className="primary-btn mt-2">
               Get Started
-            </Link>
+            </ScrollLink>
           </div>
         </div>
       </div>
@@ -108,7 +109,7 @@ export const LandingPage = ({ page }) => {
           {isWebDevelopment ? "Web Development" : "App Development"}
         </div>
         <div className="flex flex-col-reverse items-center lg:grid grid-cols-2 gap-10 mt-7">
-          <div className="flex h-full flex-col gap-7">
+          <div className="flex h-full flex-col gap-7 text-center lg:text-start">
             <div className="flex flex-col gap-7">
               <h2 className="heading-2">
                 {isWebDevelopment
@@ -121,9 +122,9 @@ export const LandingPage = ({ page }) => {
                   : "Whether you’re a startup with a fresh idea or an established enterprise, we provide full-cycle app development services tailored to your unique goals. Our apps are designed to boost engagement, optimize performance, and scale with your business, giving you a competitive edge."}
               </p>
             </div>
-            <div className="flex gap-5 mt-4">
-              <Link className="primary-btn">Contact Us</Link>
-              <Link className="secondary-btn">Our Services</Link>
+            <div className="flex justify-center lg:justify-start gap-5 mt-4">
+              <ScrollLink to="contact" smooth offset={-90} className="primary-btn">Contact Us</ScrollLink>
+              <ScrollLink to="services" smooth offset={-80} className="secondary-btn">Our Services</ScrollLink>
             </div>
           </div>
           <div className="h-full">
@@ -328,7 +329,7 @@ export const LandingPage = ({ page }) => {
             Empowering businesses to not just survive but to thrive and grow in
             the fast-paced, competitive digital landscape.
           </p>
-          <Link className="primary-btn mt-3">Contact Us</Link>
+          <ScrollLink to="contact" smooth offset={-90} className="primary-btn mt-3">Contact Us</ScrollLink>
         </div>
       </section>
 

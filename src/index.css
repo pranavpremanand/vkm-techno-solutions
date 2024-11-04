@@ -35,7 +35,7 @@ body {
     @apply max-w-7xl mx-auto px-4;
   }
   .heading-1{
-    @apply font-raleway text-5xl md:text-7xl font-bold leading-tight;
+    @apply font-raleway text-[2.75rem] md:text-7xl font-bold leading-tight;
   }
   .heading-2{
     @apply font-raleway text-4xl md:text-5xl font-semibold leading-tight;
@@ -44,13 +44,13 @@ body {
     @apply font-inter font-light;
   }
   .primary-btn {
-    @apply text-white font-light tracking-wide bg-tertiary hover:bg-tertiary/80 text-sm hover:shadow-secondary hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300;
+    @apply text-white cursor-pointer font-light tracking-wide bg-tertiary hover:bg-tertiary/80 text-sm hover:shadow-secondary hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300;
   }
   .secondary-btn{
-    @apply text-white font-light tracking-wide bg-black border border-tertiary hover:bg-tertiary text-sm hover:shadow-white hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300;
+    @apply text-white cursor-pointer font-light tracking-wide bg-black border border-tertiary hover:bg-tertiary text-sm hover:shadow-white hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300;
   }
   .btn-styles {
-    @apply hover:shadow-white tracking-wide hover:-translate-y-1 shadow-2xl shadow-transparent rounded-full px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300 font-light text-sm;
+    @apply hover:shadow-white cursor-pointer tracking-wide hover:-translate-y-1 shadow-2xl shadow-transparent rounded-full px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300 font-light text-sm;
   }
   .rounded-text-box{
     @apply px-4 py-3 rounded-full min-w-[10rem] flex justify-center border text-[.9rem] w-fit font-medium;

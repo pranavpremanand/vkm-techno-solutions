@@ -87,20 +87,6 @@ const Header = () => {
                 {name}
               </Link>
             ))}
-            <Link
-              onClick={() => setIsOpen(false)}
-              className="link text-3xl text-white font-medium transition-colors duration-300"
-              to="/"
-            >
-              Support
-            </Link>
-            <Link
-              onClick={() => setIsOpen(false)}
-              className="link text-3xl text-white font-medium transition-colors duration-300"
-              to="/"
-            >
-              Login
-            </Link>
           </div>
         </Drawer>
         <div
