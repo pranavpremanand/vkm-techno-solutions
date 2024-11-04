@@ -21,7 +21,7 @@ const Contact = () => {
             <div className="">
               <input
                 required
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-white/40 px-2 py-1"
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-white/40 px-2 py-3"
                 type="text"
                 placeholder="Full Name"
               />
@@ -29,14 +29,14 @@ const Contact = () => {
             <div className="">
               <input
                 required
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-white/40 px-2 py-1"
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-white/40 px-2 py-3"
                 type="email"
                 placeholder="Email"
               />
             </div>
             <div className="">
               <textarea
-                className="w-full bg-transparent outline-none border rounded-sm font-light border-white/40 px-2 py-1"
+                className="w-full bg-transparent outline-none border rounded-sm font-light border-white/40 px-2 py-3"
                 rows="4"
                 placeholder="Message"
                 required
