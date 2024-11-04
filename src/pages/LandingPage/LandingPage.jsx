@@ -85,7 +85,7 @@ export const LandingPage = ({ page }) => {
         <div className="bg-gradient-to-r from-white/20 to-secondary/80 absolute w-full h-full"></div>
         <div className="pt-[3rem] wrapper flex items-center h-full">
           <div className="relative z-10 px-6 justify-center h-full flex flex-col items-center gap-5 text-center md:max-w-[60rem] mx-auto">
-            <div className="rounded-text-box border-black font-medium text-white">
+            <div className="rounded-text-box border-white/70 font-medium text-white">
               {isWebDevelopment ? "Web Development" : "App Development"}
             </div>
             <h1 className="heading-1 text-white">
