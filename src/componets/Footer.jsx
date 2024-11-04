@@ -1,6 +1,6 @@
 import React from "react";
 import { BsFacebook, BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { logoImg } from "../constant";
 
 const Footer = () => {
@@ -18,11 +18,11 @@ const Footer = () => {
           <div className="flex md:flex-row flex-col gap-10">
             <div className="flex flex-col gap-2">
               <h6 className="font-medium mb-1">Quick Links</h6>
-              <Link className="text-white/70 desc text-sm">Home</Link>
-              <Link className="text-white/70 desc text-sm">About Us</Link>
-              <Link className="text-white/70 desc text-sm">Services</Link>
-              <Link className="text-white/70 desc text-sm">FAQs</Link>
-              <Link className="text-white/70 desc text-sm">Contact Us</Link>
+              <Link smooth to='banner' offset={-60} className="text-white/70 desc text-sm cursor-pointer">Home</Link>
+              <Link smooth to='about' offset={-60} className="text-white/70 desc text-sm cursor-pointer">About Us</Link>
+              <Link smooth to='services' offset={-60} className="text-white/70 desc text-sm cursor-pointer">Services</Link>
+              {/* <Link to='faqs' offset={-60} className="text-white/70 desc text-sm">FAQs</Link> */}
+              <Link smooth to='contact' offset={-60} className="text-white/70 desc text-sm cursor-pointer">Contact Us</Link>
             </div>
             <div className="flex flex-col gap-2">
               <h6 className="font-medium mb-1">Contact Us</h6>
