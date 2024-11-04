@@ -83,7 +83,7 @@ export const LandingPage = ({ page }) => {
           alt=""
         />
         <div className="bg-gradient-to-r from-white/20 to-secondary/80 absolute w-full h-full"></div>
-        <div className="pt-[3rem] wrapper flex items-center h-full">
+        <div data-aos="fade-up" className="pt-[3rem] wrapper flex items-center h-full">
           <div className="relative z-10 px-6 justify-center h-full flex flex-col items-center gap-5 text-center md:max-w-[60rem] mx-auto">
             <div className="rounded-text-box border-white/70 font-medium text-white">
               {isWebDevelopment ? "Web Development" : "App Development"}
@@ -105,11 +105,11 @@ export const LandingPage = ({ page }) => {
       </div>
 
       <section id="about" className="py-[5rem] bg-black text-white wrapper">
-        <div className="gradient-rounded-text-box mx-auto lg:mx-0">
+        <div data-aos="fade-up" className="gradient-rounded-text-box mx-auto lg:mx-0">
           {isWebDevelopment ? "Web Development" : "App Development"}
         </div>
         <div className="flex flex-col-reverse items-center lg:grid grid-cols-2 gap-10 mt-7">
-          <div className="flex h-full flex-col gap-7 text-center lg:text-start">
+          <div data-aos="fade-right" className="flex h-full flex-col gap-7 text-center lg:text-start">
             <div className="flex flex-col gap-7">
               <h2 className="heading-2">
                 {isWebDevelopment
@@ -127,7 +127,7 @@ export const LandingPage = ({ page }) => {
               <ScrollLink to="services" smooth offset={-80} className="secondary-btn">Our Services</ScrollLink>
             </div>
           </div>
-          <div className="h-full">
+          <div data-aos="fade-left" className="h-full">
             <img
               src={isWebDevelopment ? webLandingAbout : appLandingAbout}
               className="object-contain max-h-[30rem]"
@@ -141,14 +141,14 @@ export const LandingPage = ({ page }) => {
 
       <section className="py-[5rem] bg-gradient-to-r from-secondary/30 to-primary/30">
         <div className="wrapper text-center text-white flex flex-col gap-7">
-          <div className="gradient-rounded-text-box mx-auto">Why Choose Us</div>
+          <div data-aos="fade-up" className="gradient-rounded-text-box mx-auto">Why Choose Us</div>
           <div className="flex flex-col gap-5">
-            <h2 className="heading-2">Magic Behind Our IT Solutions</h2>
-            <p className="desc max-w-[40rem] mx-auto">
+            <h2 data-aos="fade-up" className="heading-2">Magic Behind Our IT Solutions</h2>
+            <p data-aos="fade-up" className="desc max-w-[40rem] mx-auto">
               We begin by conducting a comprehensive needs assessment to
               understand your specific requirements, challenges, and goals.
             </p>
-            <div className="w-full block lg:hidden">
+            <div data-aos="fade-up" className="w-full block lg:hidden">
               <img
                 src={whyChooseUsPng}
                 className="object-contain max-h-[20rem] mx-auto"
@@ -157,7 +157,7 @@ export const LandingPage = ({ page }) => {
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 items-center gap-5 mt-9">
               <div className="flex flex-col gap-5 h-full">
-                <div className="p-5 border border-primary rounded-xl w-full h-full">
+                <div data-aos="fade-up" className="p-5 border border-primary rounded-xl w-full h-full">
                   <div className="flex w-full text-start items-center justify-between gap-3">
                     <h5 className="text-xl">Technical Expertise</h5>
                     <img
@@ -171,7 +171,7 @@ export const LandingPage = ({ page }) => {
                     technical expertise.
                   </p>
                 </div>
-                <div className="p-5 border border-primary rounded-xl w-full h-full">
+                <div data-aos="fade-up" className="p-5 border border-primary rounded-xl w-full h-full">
                   <div className="flex w-full text-start items-center justify-between gap-3">
                     <h5 className="text-xl">Innovation & Adaptability</h5>
                     <img
@@ -186,7 +186,7 @@ export const LandingPage = ({ page }) => {
                   </p>
                 </div>
               </div>
-              <div className="w-full lg:block hidden">
+              <div data-aos="fade-up" className="w-full lg:block hidden">
                 <img
                   src={whyChooseUsPng}
                   className="object-contain max-h-[25rem] mx-auto"
@@ -194,7 +194,7 @@ export const LandingPage = ({ page }) => {
                 />
               </div>
               <div className="flex flex-col gap-5 h-full">
-                <div className="p-5 border border-primary rounded-xl w-full h-full">
+                <div data-aos="fade-up" className="p-5 border border-primary rounded-xl w-full h-full">
                   <div className="flex w-full text-start items-center justify-between gap-3">
                     <h5 className="text-xl">Effective Communication</h5>
                     <img
@@ -208,7 +208,7 @@ export const LandingPage = ({ page }) => {
                     technical expertise.
                   </p>
                 </div>
-                <div className="p-5 border border-primary rounded-xl w-full h-full">
+                <div data-aos="fade-up" className="p-5 border border-primary rounded-xl w-full h-full">
                   <div className="flex w-full text-start items-center justify-between gap-3">
                     <h5 className="text-xl">Security and Compliance</h5>
                     <img
@@ -233,13 +233,13 @@ export const LandingPage = ({ page }) => {
 
       <section className="pt-[10rem] pb-[5rem] bg-black text-white">
         <div className="wrapper text-center flex flex-col gap-3">
-          <div className="gradient-rounded-text-box mx-auto mb-4">
+          <div data-aos="fade-up" className="gradient-rounded-text-box mx-auto mb-4">
             Our Solutions
           </div>
-          <h1 className="heading-1 bg-gradient-to-r from-[#7186FF_40%] md:min-h-[5rem] to-[#A502A8_50%] bg-clip-text text-transparent">
+          <h1 data-aos="fade-up" className="heading-1 bg-gradient-to-r from-[#7186FF_40%] md:min-h-[5rem] to-[#A502A8_50%] bg-clip-text text-transparent">
             Design & Revolution
           </h1>
-          <p className="desc max-w-[50rem] mx-auto">
+          <p data-aos="fade-up" className="desc max-w-[50rem] mx-auto">
             At VKM Techno Solutions, we understand that in today’s digital-first
             world, your website is more than just an online presence—it’s the
             heart of your brand’s identity, a vital business tool, and often the
@@ -258,7 +258,7 @@ export const LandingPage = ({ page }) => {
         <div className="wrapper">
           <div className="flex justify-center md:justify-normal gap-5">
             <div className="absolute -z-10 md:z-10 md:relative flex gap-5">
-              <div id="to-top" className="flex flex-col -translate-y-[20%]">
+              <div data-aos="fade-up" id="to-top" className="flex flex-col -translate-y-[20%]">
                 <img
                   src={section5Img1}
                   className="h-[10rem] object-contain"
@@ -275,7 +275,7 @@ export const LandingPage = ({ page }) => {
                   alt={"section5Img1"}
                 />
               </div>
-              <div id="to-bottom" className="flex flex-col translate-y-[20%]">
+              <div data-aos="fade-up" id="to-bottom" className="flex flex-col translate-y-[20%]">
                 <img
                   src={section5Img4}
                   className="h-[10rem] object-contain"
@@ -322,7 +322,7 @@ export const LandingPage = ({ page }) => {
       {/* <Faqs /> */}
 
       <section className="py-[5rem] text-white bg-gradient-to-r from-primary/30 to-secondary/30">
-        <div className="wrapper flex flex-col text-white items-center gap-5 text-center">
+        <div data-aos="fade-up" className="wrapper flex flex-col text-white items-center gap-5 text-center">
           <div className="gradient-rounded-text-box">Unlock Efficiency</div>
           <h2 className="heading-2">Drive Innovation with Our IT Services</h2>
           <p className="desc max-w-[40rem] text-center">
@@ -339,7 +339,7 @@ export const LandingPage = ({ page }) => {
       >
         <div data-aos="fade-up">
           <div className="flex justify-center flex-col">
-            <div className="flex md:-translate-x-[30%]">
+            <div data-aos="fade-up" className="flex md:-translate-x-[30%]">
               <h2 className="text-[1rem] sm:text-3xl text-end font-raleway">
                 One <br />
                 Platform
@@ -348,7 +348,7 @@ export const LandingPage = ({ page }) => {
                 Endless
               </h2>
             </div>
-            <h2 className="text-5xl sm:text-7xl md:translate-x-[30%] font-raleway font-medium">
+            <h2 data-aos="fade-up" className="text-5xl sm:text-7xl md:translate-x-[30%] font-raleway font-medium">
               Opportunities
             </h2>
           </div>

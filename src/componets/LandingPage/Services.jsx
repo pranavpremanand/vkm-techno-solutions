@@ -9,7 +9,7 @@ const Services = ({ page }) => {
   return (
     <div id="services" className="flex justify-center relative">
       <div className="wrapper py-10 flex flex-col items-center gap-5 z-10 text-white">
-        <div className="gradient-rounded-text-box mx-auto">
+        <div data-aos="fade-up" className="gradient-rounded-text-box mx-auto">
           Our {page === "web-development" ? "Web" : "App"} Development Services
         </div>
         <h1 data-aos="fade-up" className="heading-2 text-center max-w-2xl">

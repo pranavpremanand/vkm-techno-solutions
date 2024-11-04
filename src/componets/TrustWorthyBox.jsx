@@ -54,6 +54,7 @@ const TrustWorthyBox = () => {
   return (
     <div
       ref={ref}
+      data-aos="fade-up"
       className="w-full grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10 lg:gap-5 rounded-3xl bg-gradient-to-r from-secondary to-primary p-[2rem]"
     >
       <div className="w-full flex flex-col items-center justify-center">
