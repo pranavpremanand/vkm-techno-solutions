@@ -91,7 +91,7 @@ const Testimonials = () => {
         <div className="gradient-rounded-text-box" data-aos="fade-up">
           Testimonials
         </div>
-        <h2 className="heading-2 text-white mb-3" data-aos="fade-up">
+        <h2 className="heading-2 text-white mb-2 text-center" data-aos="fade-up">
           Our Clients' Experiences
         </h2>
         <div ref={sliderRef} className="keen-slider" data-aos="fade-up">
@@ -120,7 +120,7 @@ const Testimonials = () => {
 
         <div
           data-aos="fade-up"
-          className="flex justify-center items-center gap-10 mt-5"
+          className="flex justify-center items-center gap-10 mt-2"
         >
           <button
             className="text-primary text-5xl hover:text-primary/70 transition-all duration-200"
