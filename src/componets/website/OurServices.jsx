@@ -56,6 +56,7 @@ const OurServices = ({ length }) => {
         onClose={() => setIsOpen(false)}
         direction="top"
         className="py-4 px-10 z-10 w-screen"
+        lockBackgroundScroll
       >
         <div className="mb-3 flex items-center justify-end pr-[.7rem] py-[.4rem]">
           <button
