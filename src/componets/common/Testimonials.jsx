@@ -88,9 +88,13 @@ const Testimonials = () => {
   return (
     <div className="py-[5rem]">
       <div className="wrapper flex flex-col items-center gap-7">
-        <div className="gradient-rounded-text-box">Testimonials</div>
-        <h2 className="heading-2 text-white mb-3">Our Clients' Experiences</h2>
-        <div ref={sliderRef} className="keen-slider">
+        <div className="gradient-rounded-text-box" data-aos="fade-up">
+          Testimonials
+        </div>
+        <h2 className="heading-2 text-white mb-3" data-aos="fade-up">
+          Our Clients' Experiences
+        </h2>
+        <div ref={sliderRef} className="keen-slider" data-aos="fade-up">
           {reviews.map((item) => (
             <div
               key={item.id}
@@ -114,7 +118,10 @@ const Testimonials = () => {
           ))}
         </div>
 
-        <div className="flex justify-center items-center gap-10 mt-5">
+        <div
+          data-aos="fade-up"
+          className="flex justify-center items-center gap-10 mt-5"
+        >
           <button
             className="text-primary text-5xl hover:text-primary/70 transition-all duration-200"
             onClick={handlePrevClick}

@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #5b6cff;
+  background-color: #A502A8;
   border-radius: 8px;
 }
 
@@ -44,7 +44,7 @@ body {
     @apply font-inter font-light;
   }
   .active-link {
-    @apply text-primary;
+    @apply text-primary font-semibold;
   }
   .primary-btn {
     @apply text-white cursor-pointer font-light tracking-wide bg-tertiary hover:bg-tertiary/80 text-sm hover:shadow-secondary hover:-translate-y-1 shadow-2xl shadow-transparent rounded-[.3rem] px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300;
@@ -72,9 +72,12 @@ body {
 /* menu offcanvas styles */
 .EZDrawer .EZDrawer__container {
   background: #000000 !important;
-  width: 90vw !important;
+  width: 100vw !important;
+  min-height: 100vh !important;
+  overflow-y: scroll;
   z-index: 20;
 }
+
 
 /* banner video */
 #banner video {
