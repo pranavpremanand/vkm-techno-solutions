@@ -39,7 +39,7 @@ const Home = () => {
               We specialize in delivering cutting-edge IT solutions tailored to
               meet the unique needs of modern businesses.
             </p>
-            <Link to="/webdevelopment" className="primary-btn mt-2">
+            <Link to="/contact-us" className="primary-btn mt-2">
               Get Started
             </Link>
           </div>
@@ -75,8 +75,12 @@ const Home = () => {
               </p>
             </div>
             <div className="flex gap-5 mt-4 justify-center lg:justify-start">
-              <Link className="primary-btn">Contact Us</Link>
-              <Link className="secondary-btn">Our Services</Link>
+              <Link to="/contact-us" className="primary-btn">
+                Contact Us
+              </Link>
+              <Link to="/services" className="secondary-btn">
+                Our Services
+              </Link>
             </div>
           </div>
           <div data-aos="fade-left" className="h-full">

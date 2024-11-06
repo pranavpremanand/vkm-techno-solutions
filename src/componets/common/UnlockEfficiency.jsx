@@ -11,7 +11,7 @@ const UnlockEfficiency = () => {
           Empowering businesses to not just survive but to thrive and grow in
           the fast-paced, competitive digital landscape.
         </p>
-        <Link className="primary-btn mt-3">Contact Us</Link>
+        <Link to="/contact-us" className="primary-btn mt-3">Contact Us</Link>
       </div>
     </section>
   );
