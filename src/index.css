@@ -59,10 +59,10 @@ body {
     @apply hover:shadow-white cursor-pointer tracking-wide hover:-translate-y-1 shadow-2xl shadow-transparent rounded-full px-4 py-3 min-w-[7rem] flex justify-center text-center transition-all duration-300 font-light text-sm;
   }
   .rounded-text-box {
-    @apply px-4 py-3 rounded-full min-w-[10rem] flex justify-center border text-[.9rem] w-fit font-medium;
+    @apply px-4 py-3 rounded-full font-raleway min-w-[10rem] flex justify-center border text-[.9rem] w-fit font-bold;
   }
   .gradient-rounded-text-box {
-    @apply px-4 py-3 rounded-full min-w-[10rem] flex justify-center border text-[.9rem] w-fit bg-gradient-to-r from-[#7186FF_30%] to-[#bd0ec0] font-medium border-primary bg-clip-text text-transparent;
+    @apply px-4 py-3 rounded-full font-raleway min-w-[10rem] flex justify-center border text-[.9rem] w-fit bg-gradient-to-r from-[#7186FF_30%] to-[#bd0ec0] font-bold border-primary bg-clip-text text-transparent;
   }
   .link {
     @apply cursor-pointer hover:text-primary transition-colors duration-200;

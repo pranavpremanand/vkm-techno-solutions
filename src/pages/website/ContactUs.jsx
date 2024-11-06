@@ -10,7 +10,7 @@ const MapComponent = lazy(() => import("../../componets/website/MapComponent"));
 
 const ContactUs = () => {
   return (
-    <div className="py-[5.5rem]">
+    <>
       <Banner page="Contact Us" />
       <div className="wrapper py-[5rem] grid lg:grid-cols-[45%_auto] gap-7">
         <div
@@ -122,7 +122,7 @@ const ContactUs = () => {
         </div>
       </div>
       <MapComponent />
-    </div>
+    </>
   );
 };
 

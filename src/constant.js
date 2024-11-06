@@ -14,11 +14,18 @@ import endlessOpportunitiesImg2 from "./assets/images/section-8-img-2.png";
 import endlessOpportunitiesImg3 from "./assets/images/section-8-img-3.png";
 import homeBannerVideo from "./assets/videos/home-banner.mp4";
 import defaultBanner from "./assets/images/banner.jpg";
+import aboutUsBanner from "./assets/images/about-us-banner.jpeg";
+import aboutUsGridImg1 from "./assets/images/aboutus-png1.png";
+import aboutUsGridImg2 from "./assets/images/aboutus-png2.png";
+import aboutUsGridImg3 from "./assets/images/aboutus-png3.png";
+import aboutUsGridImg4 from "./assets/images/aboutus-png4.png";
+import aboutUsGridImg5 from "./assets/images/aboutus-png5.png";
 
 import { lazy } from "react";
 const Home = lazy(() => import("./pages/website/Home"));
 const Services = lazy(() => import("./pages/website/Services"));
 const ContactUs = lazy(() => import("./pages/website/ContactUs"));
+const AboutUs = lazy(() => import("./pages/website/AboutUs"));
 
 export {
   logoImg,
@@ -37,6 +44,12 @@ export {
   endlessOpportunitiesImg3,
   homeBannerVideo,
   defaultBanner,
+  aboutUsBanner,
+  aboutUsGridImg1,
+  aboutUsGridImg2,
+  aboutUsGridImg3,
+  aboutUsGridImg4,
+  aboutUsGridImg5,
 };
 
 // company details
@@ -62,8 +75,8 @@ export const routes = [
   },
   {
     name: "About Us",
-    path: "/about",
-    component: "",
+    path: "/about-us",
+    component: <AboutUs />,
   },
   {
     name: "Contact Us",
@@ -212,5 +225,29 @@ export const allServices = [
     desc: "At VKM Techno Solutions, we specialize in game development, creating immersive and enjoyable gaming experiences.",
     detailContent:
       "Game development is an exciting and rapidly evolving field that blends creativity, technology, and storytelling to create immersive experiences for players. At VKM Techno Solutions, we understand the intricacies of game development and are passionate about bringing innovative gaming ideas to life. Our dedicated team of developers, designers, and artists work collaboratively to craft visually stunning, engaging, and interactive games that captivate audiences across various platforms.\n\n The game development process at VKM Techno Solutions begins with a comprehensive understanding of the client’s vision and target audience. We believe that successful games are built on solid concepts and engaging narratives. Our team collaborates closely with clients to brainstorm ideas, develop storylines, and create game mechanics that resonate with players. This collaborative approach ensures that the final product aligns with the client’s objectives while providing a rich and enjoyable experience for users.\n\n Once the concept is defined, our team moves into the design phase, where we focus on creating visually appealing graphics and user-friendly interfaces. Our artists employ cutting-edge design tools to create stunning visuals that draw players into the game world. Whether it’s character design, environment creation, or animation, we pay meticulous attention to detail to ensure that every element enhances the overall gaming experience. We also prioritize usability in our UI/UX design, making sure that players can navigate seamlessly and interact intuitively with the game",
+  },
+];
+
+// about us page why choose content
+export const whyChooseUsContent = [
+  {
+    title: "Customized Solutions for Every Business",
+    desc: "We believe in a tailored approach because every business is unique. We take time to understand your goals and create custom digital solutions that align perfectly with your vision.",
+  },
+  {
+    title: "Cutting-Edge Technology",
+    desc: "Our team is equipped with the latest tools and technologies to bring your project to life, ensuring that you stay ahead in the ever-changing digital space.",
+  },
+  {
+    title: "Security and Reliability",
+    desc: "At VKM Techno Solutions, we take security seriously. Our solutions are built with stringent security protocols to safeguard your business data and protect it from cyber threats.",
+  },
+  {
+    title: "Long-Term Partnerships",
+    desc: "We’re not just a service provider; we’re your strategic partner. From conceptualization to deployment and ongoing support, we’re with you every step of the way, ensuring your success in the digital landscape.",
+  },
+  {
+    title: "Agility and Innovation",
+    desc: "As technology evolves, so do we. We continuously adapt to the latest trends and innovations to deliver products that not only meet your current needs but are scalable for the future.",
   },
 ];

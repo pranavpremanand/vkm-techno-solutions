@@ -161,7 +161,7 @@ const WhyChooseUs = () => {
             </div>
           </div>
         </div>
-        <div className="mb-[-10rem] pt-[3rem]">
+        <div className="pt-[3rem]">
           <div
             ref={ref}
             data-aos="fade-up"

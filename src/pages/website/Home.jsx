@@ -55,7 +55,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col-reverse items-center lg:grid grid-cols-2 gap-10 mt-7">
           <div data-aos="fade-right" className="flex h-full flex-col gap-7">
-            <div className="flex flex-col gap-7">
+            <div className="flex flex-col gap-7 text-center lg:text-start">
               <h2 className="heading-2">
                 Enhancing Operations with Advanced Technology.
               </h2>
@@ -74,7 +74,7 @@ const Home = () => {
                 competitive digital landscape.
               </p>
             </div>
-            <div className="flex gap-5 mt-4">
+            <div className="flex gap-5 mt-4 justify-center lg:justify-start">
               <Link className="primary-btn">Contact Us</Link>
               <Link className="secondary-btn">Our Services</Link>
             </div>

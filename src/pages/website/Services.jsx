@@ -6,12 +6,12 @@ import Banner from "../../componets/website/Banner";
 
 const Services = () => {
   return (
-    <div className="pt-[5.5rem]">
+    <>
       <Banner page="Services" />
       <OurServices />
       <UnlockEfficiency />
       <Testimonials />
-    </div>
+    </>
   );
 };
 
