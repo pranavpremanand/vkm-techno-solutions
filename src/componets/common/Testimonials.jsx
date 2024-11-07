@@ -12,14 +12,14 @@ const reviews = [
     id: 1,
     profileImg: profileImg1,
     name: "Brian Manuel",
-    role: "Designation",
+    role: "CEO of Innovative Tech Corp",
     desc: "“The team's dedication and proactive approach ensured a smooth transition, and their ongoing support has been invaluable. I highly recommend Portal for anyone looking to leverage technology to achieve business goals.”",
   },
   {
     id: 2,
     profileImg: profileImg2,
     name: "Jane Smith",
-    role: "Designation",
+    role: "Director of Operations at Green Future Ltd",
     desc: "“Their thorough risk assessment and tailored security strategy not only protected our data but also enhanced our overall security posture. The team's professionalism and deep knowledge of cybersecurity were impressive.”",
   },
 ];
