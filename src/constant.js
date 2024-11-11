@@ -54,11 +54,11 @@ export {
 
 // company details
 export const companyDetails = {
-  phone: "+91-9715265678",
-  whatsapp: "+91-9715265678",
-  email: "example@domainname.com",
+  phone: "+00 00000000",
+  whatsapp: "+00 00000000",
+  email: "abc@example.com",
   address:
-    "S F NO 395/1B1A1, LR Nagar, V Kota Road, Pernambut, 635810, Vellore District, Tamil Nadu, India",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquam maxime obcaecati praesentium in",
 };
 
 // website routes
