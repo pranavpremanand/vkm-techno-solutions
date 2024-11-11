@@ -61,6 +61,7 @@ export const companyDetails = {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aliquam maxime obcaecati praesentium in",
 };
 
+
 // website routes
 export const routes = [
   {
