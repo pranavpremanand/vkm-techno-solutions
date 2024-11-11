@@ -115,7 +115,7 @@ export const LandingPage = ({ page }) => {
       <LandingServices page={page} />
       <WhyChooseUs />
 
-      <section className="pt-[10rem] pb-[5rem] bg-black text-white">
+      <section className="py-[5rem] bg-black text-white">
         <div className="wrapper text-center flex flex-col gap-3">
           <div
             data-aos="fade-up"
