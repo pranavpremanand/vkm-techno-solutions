@@ -6,7 +6,7 @@ import section5Img4 from "../../assets/images/section-5-img-4.png";
 import section5Img5 from "../../assets/images/section-5-img-5.png";
 import section5Img6 from "../../assets/images/section-5-img-6.png";
 import section5Img7 from "../../assets/images/section-5-img-7.png";
-import Contact from "../../componets/landingPages/Contact";
+import Contact from "../../components/landingPages/Contact";
 import {
   appDevBanner,
   appLandingAbout,
@@ -14,10 +14,13 @@ import {
   webLandingAbout,
 } from "../../constant";
 import { Link as ScrollLink } from "react-scroll";
-import WhyChooseUs from "../../componets/common/WhyChooseUs";
-import EndlessOpportunitiesSection from "../../componets/common/EndlessOpportunitiesSection";
-import LandingServices from "../../componets/landingPages/LandingServices";
-import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
+import WhyChooseUs from "../../components/common/WhyChooseUs";
+import EndlessOpportunitiesSection from "../../components/common/EndlessOpportunitiesSection";
+import LandingServices from "../../components/landingPages/LandingServices";
+import UnlockEfficiency from "../../components/common/UnlockEfficiency";
+import BrandLogos from "../../components/common/BrandLogos";
+import ContactForm from '../../components/common/ContactForm';
+import Portfolio from "../../components/common/Portfolio";
 
 export const LandingPage = ({ page }) => {
   const isWebDevelopment = Boolean(page === "web-development");
@@ -59,7 +62,9 @@ export const LandingPage = ({ page }) => {
         </div>
       </div>
 
-      <section id="about" className="py-[5rem] bg-black text-white wrapper">
+      <ContactForm/>
+
+      <section id="about" className="pb-[5rem] bg-black text-white wrapper">
         <div
           data-aos="fade-up"
           className="gradient-rounded-text-box mx-auto lg:mx-0"
@@ -113,6 +118,7 @@ export const LandingPage = ({ page }) => {
       </section>
 
       <LandingServices page={page} />
+      <Portfolio page={page} />
       <WhyChooseUs />
 
       <section className="py-[5rem] bg-black text-white">
@@ -221,6 +227,7 @@ export const LandingPage = ({ page }) => {
 
       <UnlockEfficiency />
       <EndlessOpportunitiesSection />
+      <BrandLogos />
       <Contact />
     </>
   );

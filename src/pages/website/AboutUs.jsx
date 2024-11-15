@@ -8,9 +8,9 @@ import {
   aboutUsGridImg5,
   whyChooseUsContent,
 } from "../../constant";
-import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
-import OurServices from "../../componets/website/OurServices";
-import Testimonials from "../../componets/common/Testimonials";
+import UnlockEfficiency from "../../components/common/UnlockEfficiency";
+import OurServices from "../../components/website/OurServices";
+import Testimonials from "../../components/common/Testimonials";
 
 const AboutUs = () => {
   return (

@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Contact from "../../componets/landingPages/Contact";
+import Contact from "../../components/landingPages/Contact";
 import aboutUsImg from "../../assets/images/landing-aboutus.png";
-import WhyChooseUs from "../../componets/common/WhyChooseUs";
+import WhyChooseUs from "../../components/common/WhyChooseUs";
 import ReactPlayer from "react-player";
 import { homeBannerVideo } from "../../constant";
-import OurServices from "../../componets/website/OurServices";
-import EndlessOpportunitiesSection from "../../componets/common/EndlessOpportunitiesSection";
-import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
+import OurServices from "../../components/website/OurServices";
+import EndlessOpportunitiesSection from "../../components/common/EndlessOpportunitiesSection";
+import UnlockEfficiency from "../../components/common/UnlockEfficiency";
 
 const Home = () => {
   return (

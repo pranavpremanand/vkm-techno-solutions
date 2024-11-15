@@ -1,8 +1,8 @@
 import React from "react";
-import OurServices from "../../componets/website/OurServices";
-import UnlockEfficiency from "../../componets/common/UnlockEfficiency";
-import Testimonials from "../../componets/common/Testimonials";
-import Banner from "../../componets/website/Banner";
+import OurServices from "../../components/website/OurServices";
+import UnlockEfficiency from "../../components/common/UnlockEfficiency";
+import Testimonials from "../../components/common/Testimonials";
+import Banner from "../../components/website/Banner";
 
 const Services = () => {
   return (

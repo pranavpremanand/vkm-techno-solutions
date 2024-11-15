@@ -18,10 +18,10 @@ const options = [
     name: "Services",
     path: "services",
   },
-  // {
-  //   name: "FAQs",
-  //   path: "faqs",
-  // },
+  {
+    name: "Portfolio",
+    path: "portfolio",
+  },
   {
     name: "Contact Us",
     path: "contact",
