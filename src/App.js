@@ -7,11 +7,14 @@ import LandingFooter from "./components/landingPages/LandingFooter";
 import WebsiteHeader from "./components/website/WebsiteHeader";
 import WebsiteFooter from "./components/website/WebsiteFooter";
 import { routes } from "./constant";
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { LoadingSpinner } from "./components/common/LoadingSpinner";
 import SpinnerContextProvider, {
   LoadingSpinnerContext,
 } from "./components/SpinnerContext";
+import { Toaster } from "react-hot-toast";
+import ScrollToTop from "./components/common/ScrollToTop";
+const Thankyou = lazy(() => import("./pages/Thankyou"));
 
 AOS.init({
   once: true,
@@ -22,6 +25,8 @@ export default function App() {
     <SpinnerContextProvider>
       <LoadingSpinnerContext />
       <Suspense fallback={<LoadingSpinner />}>
+        <Toaster />
+        <ScrollToTop />
         <Routes>
           {/* Website Pages */}
           {routes.map(({ component, name, path }, index) => (
@@ -36,6 +41,8 @@ export default function App() {
               }
             />
           ))}
+
+          <Route path="/thankyou" element={<Thankyou />} />
 
           {/* Landing Pages */}
           <Route

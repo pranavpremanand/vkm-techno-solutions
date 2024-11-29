@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFacebook, BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 import { Link as ScrollLink } from "react-scroll";
 import { companyDetails, logoImg } from "../../constant";
 import { Link } from "react-router-dom";
@@ -70,20 +70,36 @@ const LandingFooter = () => {
             </div>
           </div>
         </div>
-        <div className="pt-4 mt-7 border-t text-gray-500 border-primary w-full">
+        <div className="pt-4 mt-7 border-t border-primary w-full">
           <div className="flex justify-center gap-5 w-full">
             <div className="flex gap-5 items-center mt-5">
-              <Link>
-                <BsFacebook className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
+            <Link
+                to={companyDetails.facebook}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <BsFacebook className="text-xl text-white/90 hover:text-primary transition-all duration-300" />
               </Link>
-              <Link>
-                <BsTwitter className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
+              <Link
+                to={companyDetails.twitter}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <BsTwitter className="text-xl text-white/90 hover:text-primary transition-all duration-300" />
               </Link>
-              <Link>
-                <BsLinkedin className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
+              <Link
+                to={companyDetails.linkedin}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <BsLinkedin className="text-xl text-white/90 hover:text-primary transition-all duration-300" />
               </Link>
-              <Link>
-                <BsYoutube className="text-xl text-gray-500 hover:text-primary transition-all duration-300" />
+              <Link
+                to={companyDetails.instagram}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <BsInstagram className="text-xl text-white/90 hover:text-primary transition-all duration-300" />
               </Link>
             </div>
           </div>

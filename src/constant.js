@@ -56,9 +56,13 @@ export {
 export const companyDetails = {
   phone: "+91-9715265678",
   whatsapp: "+91-9715265678",
-  email: "example@domainname.com",
+  email: "support@vkmtechnosolutions.com",
   address:
     "S F NO 395/1B1A1, LR Nagar, V Kota Road, Pernambut, 635810, Vellore District, Tamil Nadu, India",
+  twitter: "https://x.com/VKMTechnoSoln",
+  linkedin: "https://www.linkedin.com/in/vkm-techno-solutions-3b03ab33a/",
+  instagram: "https://www.instagram.com/vkmtechnosolutions/",
+  facebook: "https://www.facebook.com/profile.php?id=61566531176974",
 };
 
 // website routes
