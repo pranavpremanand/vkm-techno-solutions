@@ -57,7 +57,7 @@ const LandingFooter = () => {
               <h6 className="font-medium mb-1">Contact Us</h6>
               <div className="flex flex-col">
                 <h6 className="text-[.9rem] mb-1">Phone</h6>
-                <Link className="text-white/70 desc text-sm">
+                <Link to={`tel:${companyDetails.phone}`} className="text-white/70 desc text-sm">
                   {companyDetails.phone}
                 </Link>
               </div>
