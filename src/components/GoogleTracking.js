@@ -6,20 +6,6 @@ const GoogleTracking = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Google Analytics (gtag.js) Script
-    const gaScript = document.createElement('script');
-    gaScript.async = true;
-    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=AW-16758064714';
-    document.head.appendChild(gaScript);
-
-    // Google Analytics Configuration
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      window.dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'AW-16758064714');
-
     // Google Tag Manager Script
     const gtmScript = document.createElement('script');
     gtmScript.innerHTML = `
@@ -30,7 +16,7 @@ const GoogleTracking = () => {
             j=d.createElement(s),
             dl=l!='dataLayer'?'&l='+l:'';
         j.async=true;
-        j.src='https://www.googletagmanager.com/gtag/js?id='+i+dl;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
         f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-5VQJ7X5Q');
     `;
@@ -38,46 +24,36 @@ const GoogleTracking = () => {
 
     // Cleanup function
     return () => {
-      document.head.removeChild(gaScript);
       document.head.removeChild(gtmScript);
     };
   }, []);
 
-  // Track page views
   useEffect(() => {
-    // Google Analytics page view tracking
-    if (window.gtag) {
-      window.gtag('config', 'AW-16758064714', {
-        'page_path': location.pathname + location.search
-      });
-    }
-
-    // Google Tag Manager page view event
+    // Push page view to GTM
     if (window.dataLayer) {
       window.dataLayer.push({
         event: 'pageview',
         page: {
           path: location.pathname,
           search: location.search,
-          url: window.location.href
-        }
+          url: window.location.href,
+        },
       });
     }
   }, [location]);
 
   return (
     <Helmet>
-      {/* Noscript tag for Google Tag Manager */}
-      <noscript>
-        {`
+      <noscript dangerouslySetInnerHTML={{
+        __html: `
           <iframe 
             src="https://www.googletagmanager.com/ns.html?id=GTM-5VQJ7X5Q"
             height="0" 
             width="0" 
             style="display:none;visibility:hidden"
           ></iframe>
-        `}
-      </noscript>
+        `
+      }} />
     </Helmet>
   );
 };
