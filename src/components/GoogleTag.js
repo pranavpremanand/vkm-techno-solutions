@@ -1,8 +1,8 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom'; // For React Router
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom"; // For React Router
 
 const GoogleTags = () => {
-  const location = useLocation(); // Detect route changes
+  const { pathname } = useLocation(); // Detect route changes
 
   useEffect(() => {
     // Initialize gtag
@@ -12,11 +12,11 @@ const GoogleTags = () => {
     };
 
     // Configure Google Analytics/Tag Manager
-    gtag('js', new Date());
-    gtag('config', 'AW-16758064714', {
-      page_path: location.pathname, // Track page path
+    gtag("js", new Date());
+    gtag("config", "AW-16758064714", {
+      page_path: pathname, // Track page path
     });
-  }, [location]); // Run on route change
+  }, [pathname]); // Run on route change
 
   return null;
 };
