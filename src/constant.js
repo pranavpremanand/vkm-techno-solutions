@@ -60,10 +60,11 @@ export const companyDetails = {
   address:
     "S F NO 395/1B1A1, LR Nagar, V Kota Road, Pernambut, 635810, Vellore District, Tamil Nadu, India",
   twitter: "https://x.com/VKMTechnoSoln",
-  linkedin: "https://www.linkedin.com/in/vkm-techno-solutions-3b03ab33a/",
+  linkedin: "https://www.linkedin.com/in/vkm-techno-solutions-91030133b/",
   instagram: "https://www.instagram.com/vkmtechnosolutions/",
   facebook: "https://www.facebook.com/profile.php?id=61566531176974",
 };
+
 
 // website routes
 export const routes = [
