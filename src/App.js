@@ -21,8 +21,6 @@ AOS.init({
   duration: 500,
 });
 export default function App() {
-  console.log(window.dataLayer);
-
   return (
     <SpinnerContextProvider>
       <LoadingSpinnerContext />
